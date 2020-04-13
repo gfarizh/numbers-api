@@ -1,6 +1,18 @@
 This repository is used for doing numbers-api related task.
 The source code is cloned from https://github.com/askmeegs/respy.git
 
+```
+In this task I'm focusing on the helm & deployment process.
+
+The docker image will be build in src directory.
+
+In this case I put the docker image into my local repository.
+
+After that, we can do deployment using deploy.sh script using helm chart.
+
+```
+
+
 # respy
 
 A command-line tool to show a percentage distribution  
