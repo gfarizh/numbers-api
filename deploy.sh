@@ -3,9 +3,9 @@
 function show_help() {
     cat <<EOF
 Usage: ${0##*/} [-h] [-t] [-e ENVIRONMENT]
-Deploys a Kubernetes Helm chart with in a given environment and namespace.
+Deploys a Kubernetes Helm chart with in a given environment
          -h               display this help and exit
-         -e ENVIRONMENT   environment for which the deployment is perfomed (e.g. acs)
+         -e ENVIRONMENT   environment for which the deployment is perfomed (e.g. stage)
          -t               validate only without performing any deployment
 EOF
 }
