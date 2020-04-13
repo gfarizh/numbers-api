@@ -10,6 +10,7 @@ Deploys a Kubernetes Helm chart with in a given environment
 EOF
 }
 
+
 CHART_NAME="numbers-api"
 ENVIRONMENT='stage'
 DRY_RUN=false
