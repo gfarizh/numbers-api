@@ -1,0 +1,29 @@
+replicaCount: 2
+
+image:
+  repository: localhost:5000/numbers-api
+  tag: production
+  pullPolicy: IfNotPresent
+
+service:
+  name: numbers-api
+  type: NodePort
+  externalPort: 3000
+  internalPort: 3000
+
+autoscaling:
+  enabled: true
+  minReplicas: 2
+  maxReplicas: 11
+  targetCPUUtilizationPercentage: 50
+  targetMemoryUtilizationPercentage: 50
+
+resources:
+  limits:
+    cpu: 100m
+    memory: 128Mi
+  requests:
+    cpu: 100m
+    memory: 128Mi
+
+
